@@ -1,8 +1,9 @@
-%-------------
+%-------------------------
 % Resume in Latex
-% Author : Sidratul Muntaha Ahmed
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
 % License : MIT
-%------------
+%------------------------
 
 \documentclass[letterpaper,11pt]{article}
 
@@ -13,14 +14,18 @@
 \usepackage[usenames,dvipsnames]{color}
 \usepackage{verbatim}
 \usepackage{enumitem}
-\usepackage[hidelinks]{hyperref}
+\usepackage[colorlinks=true, linkcolor=blue]{hyperref}
 \usepackage{fancyhdr}
 \usepackage[english]{babel}
 \usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
 \input{glyphtounicode}
 
 
-%-----FONT OPTIONS-----
+%----------FONT OPTIONS----------
 % sans-serif
 % \usepackage[sfdefault]{FiraSans}
 % \usepackage[sfdefault]{roboto}
@@ -39,11 +44,11 @@
 \renewcommand{\footrulewidth}{0pt}
 
 % Adjust margins
-\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\oddsidemargin}{-0.6in}
 \addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
 
 \urlstyle{same}
 
@@ -53,13 +58,13 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
 
-%-------------
+%-------------------------
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
@@ -67,150 +72,225 @@
   }
 }
 
-\newcommand{\resumeSubHeader}[4]{
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeSubSubHeader}[2]{
+\newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
-\newcommand{\resumeProjectHeader}[2]{
+\newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & #2 \\
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeaderListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
-\newcommand{\resumeSubHeaderListEnd}{\end{itemize}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-%----------------------
+%-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
 \begin{document}
 
-%-----Header-----
-
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge Boming Zhang} \\ \vspace{1pt}
-    \small (+86)180-1720-9402 $|$ \href{mailto:boyanzh233@gmail.com}{\underline{boyanzh233@gmail.com}} $|$
-    \href{https://boyanzh.site}{\underline{boyanzh.site}} $|$
-    \href{https://github.com/BoYanZh}{\underline{github.com/BoYanZh}}
+    {\Huge \scshape Yuqi Xie} \\ \vspace{1pt}
+    1859 Shirley Ln Apt B7, Ann Arbor, MI, 48105 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 734-510-4285 ~ \href{mailto:xieleo@umich.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{xieleo@umich.edu}} ~ 
+    %\href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/username}}  ~
+    \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/xieleo5}}
+    \vspace{-8pt}
 \end{center}
 
 
-%------EDUCATION------
+%-----------EDUCATION-----------
 \section{Education}
-  \resumeSubHeaderListStart
-    \resumeSubHeader
-      {Shanghai Jiao Tong University (UM-SJTU Joint Institute)}{Sept. 2018 - Aug. 2022}
-      {BEng in Electrical and Computer Engineering (minor in Computer Science, GPA 4.0/4.0)}{Shanghai, China}
-          \resumeItemListStart
-            \resumeItem{Relevant Coursework: Intro to OS (A+), Methods and Tools for Big Data (A+), Intro to Crypto. (A), Capstone Project (A), Data Structures and Algo. (A), Prog. and Elem. Data Structures (A+), Intro to Comp. (A+)}
-            \resumeItem{\textbf{2020-2021 Undergraduate Excellent Scholarship}}
-            \resumeItem{Outstanding Member of Technology Department UM-SJTU Joint Institute Student Union}
-          \resumeItemListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Michigan, Ann Arbor}{Sep. 2021 -- Apr. 2023(Expected)}
+      {Bachelor of Computer Science - College of Engineering}{Ann Arbor, Michigan, U.S.}
+    \begin{itemize}
+      \item \textbf{Admitted Transfer Student of the Dual Degree Program}
+      \item \textbf{GPA: }3.96/4.0
+    \end{itemize}
+    \vspace*{4.0\multicolsep}
+  \resumeSubHeadingListEnd
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Shanghai Jiaotong University}{Sep. 2019 -- Aug. 2021}
+      {Bachelor of Electrical and Computer Engineering - UM-SJTU Joint Institute}{Shanghai, China}
+  \resumeSubHeadingListEnd
+% %------RELEVANT COURSEWORK-------
+% \section{Relevant Coursework}
+%     %\resumeSubHeadingListStart
+%     \begin{itemize}[itemsep=-3pt, parsep=3pt]
+%         \item Programming: EECS 281(A+), EECS 370(A+), EECS 376 (A), EECS 481(A-), EECS 388(A), EECS 482(A), EECS 493(In Progress), EECS 485(In Progress), EECS 498-003(XR, In Progress)
+%         \item Machine Learning: EECS 545(A), EECS 498-008(CV, A), CS224n(free lecture online)
+%     \end{itemize}
+%     %
+%     %\resumeSubHeadingListEnd
 
-  \resumeSubHeaderListEnd
+\section{Interested Area}
+%\resumeSubHeadingListStart
+\begin{itemize}[itemsep=-3pt, parsep=3pt]
+    \item Artificial Intelligence, Reinforcement Learning, Multi-Modal Machine Learning.
+    \item Software Engineering.
+    \item Extended Reality (VR and AR).
+\end{itemize}
 
-%------EXPERIENCE------
+% -----------EXPERIENCE-----------
 \section{Experience}
-  \resumeSubHeaderListStart
-  \resumeSubHeader
-    {Software Engineer Intern}{Feb. 2022 - Jul. 2022}
-    {\href{https://naivesystems.com}{Naive Systems}}{Shanghai, China}
-    \resumeItemListStart
-      \resumeItem{Take part in a code analyzer and relative DevSecOps products. Implement checkers of some guidelines in MISRA C, based on \textbf{Clang Static Analyzer, Libtooling, and Cppcheck}. Responsible for all checkers' tests.}
-      \resumeItem{Develop a VSCode extension to read protobuf analyzer results. Implement the i18n feature for checkers.}
-    \resumeItemListEnd
+ \resumeSubHeadingListStart
 
-    \resumeSubHeader
-      {Research \& Development Engineer Intern}{Jun. 2021 - Feb. 2022}
-      {Shanghai Zhimian Weiye Technology}{Shanghai, China}
-      \resumeItemListStart
-        \resumeItem{Build Intell. IoT Firefighting System project. Design the architecture, and work as a full-stack developer.}
-      \resumeItemListEnd
+   \resumeSubheading
+     {MineDojo Team}{April 2022 - Present}
+     {Undergraduate Research Assistant}{\href{https://github.com/MineDojo}{Github Website}}
+     \resumeItemListStart
+       \resumeItem{Developed a \href{https://github.com/openai/gym}{Gym} environment called FabricDojo for Reinforcement Learning agent based on \href{https://fabricmc.net/}{Fabric}. It is similar to Microsoft's \href{https://github.com/minerllabs/minerl}{MineRL}, but change the action space to be only mouse and keyboard.}
+       \resumeItem{Developed a web browsing Gym environment based on \href{https://www.selenium.dev/}{Selenium}.}
+       \resumeItem{Update MineDojo to MineDojo2 using the new MineRL v1.0 backend, which is based on \href{https://github.com/Hexeption/MCP-Reborn}{MCP-Reborn}}
+     \resumeItemListEnd
 
-    \resumeSubHeader
-      {Research Assistant}{Mar. 2021 - Feb. 2022}
-      {Intelligent Design and Optimization Research Lab, advisor Prof. Mian Li}{Shanghai, China}
-      \resumeItemListStart
-        \resumeItem{\textbf{Technical leader} of 2 Undergraduate Innovation Practice Programs. Build a risk control center for Shanghai Jiao Tong University School of Medicine, used by over 10 different management systems and over 100 faculties.}
-        \resumeItem{Develop a cryptocurrency funding rate arbitrage system in async python to get \textbf{milli-second transaction time}.}
-        \resumeItem{Maintain a filling station hazard CV detection system based on \textbf{NVIDIA Jetson} and \textbf{lock-free queue}.}
-      \resumeItemListEnd
-
-    \resumeSubHeader
-      {Teaching Assistant (Intro to OS, Intro to Comp.)}{Sep. 2020 - Dec. 2020, Sep. 2021 - Dec. 2021}
-      {Shanghai Jiao Tong University, advisor Prof. Manuel Charlemagne}{Shanghai, China}
-      \resumeItemListStart
-        \resumeItem{Host \textbf{exam review sessions} and \textbf{weekly lab sessions} for at most 100 students. Grade labs and homework.}
-        \resumeItem{Develop an automatic cast-to-cast grading script. Maintain servers for up to 150 students' usage.}
-      \resumeItemListEnd
-
-    \resumeSubHeader
-      {Deputy Director}{Sep. 2018 - Jul. 2019}
-      {Technology Department UM-SJTU Joint Institute Student Union}{Shanghai, China}
-      \resumeItemListStart
-        \resumeItem{Build multimedia system and chatbot with PyQt5 for welcoming party. Write posts on WeChat official accounts.}
-      \resumeItemListEnd
-
-
-    \resumeSubHeaderListEnd
-
-%------PROJECTS------
-\section{Projects}
-
-    \resumeSubHeaderListStart
-      \resumeProjectHeader
-        {\href{https://github.com/joint-online-judge}{\textbf{JOJ 2.0}} $|$ \emph{Python3, Cython, PostgreSQL, Redis, Celery, LakeFS, Docker, CGroupsV1, React.js}}{Mar. 2021 - Present}
+   \resumeSubheading
+   {SOCR MDP Team}{Winter Semester, 2022}
+     {Undergraduate Research Assistant}{\href{https://www.socr.umich.edu/}{Official Website}}
+     \resumeItemListStart
+       \resumeItem{Help to clean up the MIMIC-III dataset. Remove unused columns and punctuations. }
+       \resumeItem{Finetune scikit-learn's pre-trained word2vec language model on MIMIC-III dataset.}
+       \resumeItem{Use the finetuned model to obfuscate the personal information in hospital's database.}
+   \resumeItemListEnd
+   
+ \resumeSubHeadingListEnd
+\vspace{-16pt}
+%
+%-----------PROJECTS-----------
+\section{Previous Works}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{MineDojo2} $|$ \emph{Python, Gym, Java, Gradle, Jinja2 | Research Project}}{On-going project}
         \resumeItemListStart
-          \resumeItem{Develop an online judge system from scratch for various courses. Provide stable, secure, fast, well-documented online judge service with various integrations for \textbf{over 1000 students in the institute}.}
-          \resumeItem{Build the judger's sandbox with \textbf{namespace and containerization} for isolation and measurement.}
+          \resumeItem{MineDojo2 is based on MineRL's \href{https://github.com/minerllabs/minerl/releases/tag/v1.0}{new v1.0 backend}. It inherited all of the \href{https://docs.minedojo.org/}{MineDojo's api}, and have better support for mouse and keyboard actions.}
+          \resumeItem{The game version is updated to v1.16.5, and there are more observation spaces.}
+          \resumeItem{Support OpenAI's \href{https://github.com/openai/Video-Pre-Training}{VPT} pre-trainned model, can train new agent based on that easily.}
+          % \resumeItem{The action space more focus on low-level input like mouse and keyboard, so that the agent can act more like a human.}
         \resumeItemListEnd
-      \resumeProjectHeader
-        {\href{https://github.com/SJTU-IPP-Firefighting}{\textbf{Intell. IoT Firefighting System}} $|$ \emph{Python3, Go, MongoDB, Docker, React.js, React Native}}{Mar. 2021 - Feb. 2022}
+        \vspace{-13pt}
+      \resumeProjectHeading
+        {\textbf{Contribution to MineRL} $|$ \emph{Python, Java , Gym| Personal Contribution}}{Summer Break, 2022}
         \resumeItemListStart
-          \resumeItem{Start from scratch, build a high perf. firefighting platform (Web + App) based on IoT data. Use an algorithm to detect potential hazards and report fire alarms with high accuracy in buildings to \textbf{save life and money}.}
-          \resumeItem{Deploy the system on \textbf{the fire brigade of Shanghai Province}, connected with \textbf{over 7 million IoT devices}.}
+          \resumeItem{MineRL v1.0 was released in August. It completely reformat its backend so many of its APIs are not working.}
+          \resumeItem{Fix the problem that the life status observation always return the default value. \href{https://github.com/minerllabs/minerl/pull/664}{Link to PR}}
+          \resumeItem{Implement the equipped item observation on java side, also fix problem of same observation on python side. \href{https://github.com/minerllabs/minerl/pull/665}{Link to PR}}
         \resumeItemListEnd
-      \resumeProjectHeader
-        {\href{https://gist.github.com/BoYanZh/fc4469c20fd6adf42c212114532aaac0}{\textbf{FOCS student system \& related tools}} $|$ \emph{Python3, Go, Node.js, Docker, Nginx, Certbot}}{Nov. 2018 - Present}
+        \vspace{-13pt}
+      \resumeProjectHeading
+        {\textbf{FabricDojo} $|$ \emph{Python, Gym, Java, GRPC, Mixin, Gradle | Research Project}}{Summer Break, 2022}
         \resumeItemListStart
-          \resumeItem{Develop new features and maintain the online service and software, including online judge, self-service Git platform, CI platform for \textbf{over 300 students from 10 courses each term} to build, test, and grade their codes.}
-          \resumeItem{Build various tools to connect Canvas LMS, Online Judge, and Gitea together, which are widely used by students and teaching assistants in Joint Institute to save their time. Get \textbf{in total 60+ stars} on Github.}
+          \resumeItem{FabricDojo is a Gym enviroment for Reinforcement Learning agent to play Minecraft. It is based on Fabric, which is a mod maker of Minecraft.}
+          \resumeItem{Use GRPC and localhost socket to communicate between Java and python, run 2 times faster than Microsoft MineRL in benchmark.}
+          \resumeItem{Unlike Microsoft MineRL only use Minecraft 1.12, it can be used on the latest Minecraft Game and can be updated to new version easily. }
+          \resumeItem{The action space more focus on low-level input like mouse and keyboard, so that the agent can act more like a human.}
         \resumeItemListEnd
-    \resumeSubHeaderListEnd
+        \vspace{-13pt}
+      \resumeProjectHeading
+        {\textbf{SOCR-DataSifter} $|$ \emph{Python | MDP SOCR Project}}{Winter Semester, 2022}
+        \resumeItemListStart
+          \resumeItem{\href{https://socr.umich.edu/HTML5/DataSifter/}{DataSifter} is a method to share real clinical data containing clearly identifiable personal health information (PHI) without compromising either the value of the data or by introducing a substantial risk for re-identification of individuals.}
+          \resumeItem{Use LightGBM to find out keywords that contibute most to the information that need to be obfuscated.}
+          \resumeItem{Finetune language model on MIMIC-III dataset. Obfuscate the data using the language model by finding synonymous substitution.}
+          \resumeItem{Use SDV Privacy-Utility metrics to evaluate the effect of the whole model.}
+        \resumeItemListEnd
+        \vspace{-13pt}
+      \resumeProjectHeading
+        {\textbf{Arceus} $|$ \emph{Python, Gym | Personal Project}}{Winter Semester, 2022}
+        \resumeItemListStart
+          \resumeItem{A Gym environment for agent to play with Pokemon Gold. The simulator is based on \href{https://openai.com/blog/gym-retro/}{Gym Retro}.}
+          \resumeItem{The action space is just Game Boy keys. The observation space use the \href{https://datacrystal.romhacking.net/wiki/Pok\%C3\%A9mon_Gold_and_Silver:RAM_map}{RAM Map} to read game status.}
+          \resumeItem{The agent now can use BFS to traverse the map, the next step is to use PPO algorithm to train the bot do more job.}
+        \resumeItemListEnd
+        \vspace{-13pt}
+      \resumeProjectHeading
+        {\textbf{Reimplement of WGAN} $|$ \emph{Pytorch | EECS 545 Final Project}}{Fall Semester, 2021}
+        \resumeItemListStart
+          \resumeItem{Reimplement the Wasserstein Generative Adversarial Network. Train on CelebA, LSUN and animate character sets.}
+          \resumeItem{Analysis the loss function of WGAN and porbe into the reason behind its success.}
+          \resumeItem{Compare WGAN's FID score with the widely used DCGAN. Show that WGAN do better than DCGAN.}
+        \resumeItemListEnd
+        % \vspace{-13pt}
+      
+      % \resumeProjectHeading
+      %     {\textbf{Clash Royale Bot} $|$ \emph{Python, Pytorch — Team Project(with classmate for fun)}}{Winter Break, 2021}
+      %     \resumeItemListStart
+      %       \resumeItem{A bot that can play the game ”Clash Royale” to defeat human player. Still in progress, lots of function not done yet.}
+      %       \resumeItem{The program will first detect and localize opponents’ soldiers moving in the map. We use pre-trained parameters provided by Pytorch to reduce training time.}
+      %       \resumeItem{The bot will be later developed to play the game on itself. It will place soldiers that can counter opponents' soldiers it detect.}
+      %     \resumeItemListEnd 
+      %     \vspace{-13pt}
+      % \resumeProjectHeading
+      %     {\textbf{XDial} $|$ \emph{Python | Personal Project}}{Spring Semester, 2021}
+      %     \resumeItemListStart
+      %       \resumeItem{A tool to automatic dial-up to 5G Internet using 5G dialing modules and phone cards on computer.}
+      %       \resumeItem{Use serials library to recieve and send message to the modules' port. Match input information with regular expression and dial-up to Internet automatically.}
+      %       \resumeItem{Use PyQt library to build a basic GUI for the main interface, tray icon and information alertion.}
+      %     \resumeItemListEnd 
+    \resumeSubHeadingListEnd
+\vspace{-15pt}
 
 
 %
-%------TECHNICAL SKILLS------
+%-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python3, (modern) C++, C (Linux), Go, Typescript, MATLAB, C\#, Java, HTML, Shell, \LaTeX} \\
-     \textbf{Frameworks}{: FastAPI, Django, Flask, React.js, Selenium, PyTest, NumPy, MXNet, Hadoop} \\
-     \textbf{Developer Tools}{: Git, Docker, Github, Gitlab, Drone.io, VSCode, Pre-commit, Linux Perf} \\
-     \textbf{Data Management Tools}{: PostgreSQL, MySQL, MongoDB, Redis, Drill, SQLite, ZeroMQ} \\
+     \textbf{Languages}{: Python, Java, C/C++, JavaScript} \\
+     \textbf{Libraries and tools}{: Pytorch, Gym, Gradle, Selenium, Mixin, GRPC} \\
+     \textbf{Developing Software}{: VS Code, Jupyter Notebook, Android Studio, Matlab, \LaTeX, git} \\
     }}
  \end{itemize}
+ \vspace{-16pt}
 
 
-%----------------------
+%-----------INVOLVEMENT---------------
+% \section{Leadership / Extracurricular}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{Student Science and Technology Innovation Assosiation}{Fall 2020 -- Summer 2021}{President of Competiton Department}{Shanghai Jiaotong University}
+%             \resumeItemListStart
+%                 \resumeItem{Holding and arranging workshops on technology topics such as algorithms, useful tools and so on.}
+%                 \resumeItem{Organize and promote the registrations of different competitons.}
+%                 \resumeItem{Organize science and technology competitions in schools.}
+%             \resumeItemListEnd
+        
+%     \resumeSubHeadingListEnd
+
+
 \end{document}
