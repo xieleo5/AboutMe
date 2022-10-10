@@ -1,6 +1,6 @@
 module.exports = {
     pathPrefix: '',
-    siteUrl: 'https://boyanzh.site',
+    siteUrl: 'https://xieleo.github.io',
     title: 'xieleo',
     description: 'Personal Website of John Doe',
     author: 'Yuqi Xie',
