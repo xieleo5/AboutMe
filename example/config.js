@@ -155,24 +155,24 @@ module.exports = {
     ],
     tags: [
         {
-            id: 'python',
-            name: 'python',
+            id: 'javascript',
+            name: 'javascript',
             description:
-                'Python is a high-level, general-purpose programming language.',
-            color: '#444ff3',
+                'JavaScript is an object-oriented programming language used alongside HTML and CSS to give functionality to web pages.',
+            color: '#f0da50',
         },
         {
-            id: 'gym',
-            name: 'gym',
+            id: 'nodejs',
+            name: 'Node.js',
             description:
-                'Gym is an open source Python library for developing and comparing reinforcement learning algorithms by providing a standard API to communicate between learning algorithms and environments',
+                'Node.js is a tool for executing JavaScript in a variety of environments.',
             color: '#90c53f',
         },
         {
-            id: 'ray',
-            name: 'ray',
+            id: 'rxjs',
+            name: 'RxJS',
             description:
-                'Ray is an open-source unified compute framework that makes it easy to scale AI and Python workloads.',
+                'RxJS is a library for reactive programming using Observables, for asynchronous operations.',
             color: '#eb428e',
         },
         {
@@ -209,6 +209,13 @@ module.exports = {
             description:
                 'CSS is used to style the HTML element and to give a very fancy look for the web application.',
             color: '#43ace0',
+        },
+        {
+            id: 'python',
+            name: 'python',
+            description:
+                'A general purpose programming language that is widely used for developing various applications.',
+            color: '#f9c646',
         },
     ],
 };
