@@ -189,7 +189,7 @@ Return:
 
 ### Example
 
-```{python}
+```python
 import Arceus
 
 env = Arceus.make("PokemonGold-v0", record_path=".")
