@@ -9,11 +9,11 @@ authors:
     url: "https://github.com/xieleo5"
   - "xieleo"
 path: "project/arceus"
-selected: false
+selected: true
 cover: "./preview.png"
 links:
   - name: "github"
-    file: "https://github.com/xieleo5"
+    file: "https://github.com/xieleo5/Arceus"
 priority: 20
 ---
 

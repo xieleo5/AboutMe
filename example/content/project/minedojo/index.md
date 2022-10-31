@@ -13,7 +13,7 @@ selected: true
 cover: "./preview.png"
 links:
   - name: "github"
-    file: "https://github.com/xieleo5"
+    file: "https://minedojo.org/"
 priority: 5
 ---
 
