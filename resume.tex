@@ -33,8 +33,8 @@
 % \usepackage[default]{sourcesanspro}
 
 % serif
-% \usepackage{CormorantGaramond}
-% \usepackage{charter}
+\usepackage{CormorantGaramond}
+\usepackage{charter}
 
 
 \pagestyle{fancy}
@@ -58,7 +58,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
+  \vspace{-4pt}\raggedright\large\bfseries
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -68,7 +68,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {\raggedright #1 \vspace{-2pt}}
   }
 }
 
@@ -78,11 +78,11 @@
   }
 }
 
-\newcommand{\resumeSubheading}[4]{
+\newcommand{\resumeSubheading}[5]{
   \vspace{-2pt}\item
     \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
-      \textit{\small#3} & \textit{\small #4} \\
+      \textbf{#1} \textit{#2} & \textbf{\small #3} \\
+      \textit{\small#4} & \textit{\small #5} \\
     \end{tabular*}\vspace{-7pt}
 }
 
@@ -108,7 +108,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-3pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -123,11 +123,11 @@
 % \end{tabular*}
 
 \begin{center}
-    {\Huge \scshape Yuqi Xie} \\ \vspace{1pt}
+    {\Large \textbf{Yuqi Xie} } \\ \vspace{1pt}
     1859 Shirley Ln Apt B7, Ann Arbor, MI, 48105 \\ \vspace{1pt}
     \small \raisebox{-0.1\height}\faPhone\ 734-510-4285 ~ \href{mailto:xieleo@umich.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{xieleo@umich.edu}} ~ 
     %\href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/username}}  ~
-    \href{https://github.com/}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/xieleo5}}
+    \href{https://xieleo5.github.io}{\raisebox{-0.2\height}\faGithub\ \underline{xieleo5.github.io}}
     \vspace{-8pt}
 \end{center}
 
@@ -136,17 +136,17 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University of Michigan, Ann Arbor}{Sep. 2021 -- Apr. 2023(Expected)}
-      {Bachelor of Computer Science - College of Engineering}{Ann Arbor, Michigan, U.S.}
+      {University of Michigan, Ann Arbor}{}{Sep. 2021 -- Apr. 2023}
+      {Bachelor of Computer Science - College of Engineering}{Michigan, U.S.}
     \begin{itemize}
-      \item \textbf{Admitted Transfer Student of the Dual Degree Program}
-      \item \textbf{GPA: }3.96/4.0
+      \item \small Highlighted Courses: Machine Learning, Deep Learning for Computer Vision, Operating System, Web Systems
+      \item \small GPA: 3.96/4.0
     \end{itemize}
-    \vspace*{4.0\multicolsep}
+    \vspace*{6.0\multicolsep}
   \resumeSubHeadingListEnd
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Shanghai Jiaotong University}{Sep. 2019 -- Aug. 2021}
+      {Shanghai Jiaotong University}{}{Sep. 2019 -- Aug. 2023}
       {Bachelor of Electrical and Computer Engineering - UM-SJTU Joint Institute}{Shanghai, China}
   \resumeSubHeadingListEnd
 % %------RELEVANT COURSEWORK-------
@@ -160,91 +160,101 @@
 %     %\resumeSubHeadingListEnd
 
 \section{Interested Area}
-%\resumeSubHeadingListStart
-\begin{itemize}[itemsep=-3pt, parsep=3pt]
-    \item Artificial Intelligence, Reinforcement Learning, Multi-Modal Machine Learning.
-    \item Software Engineering.
-    \item Extended Reality (VR and AR).
-\end{itemize}
 
+\resumeItemListStart
+\resumeItem{General-purpose agents, Foundation Models, Multimodal Learning}
+\resumeItem{Robotics, Reinforcement Learning}
+\resumeItemListEnd
+% \small I am interested in general-purpose agents, foundation models and areas like reinforcement learning, robotics and multimodal learning. % I'm also interested in XR technologies.
+\vspace{-10pt}
 % -----------EXPERIENCE-----------
-\section{Experience}
- \resumeSubHeadingListStart
+\section{Research Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+    {Nvidia research Team}{}{August 2022 - Present}
+    {Research Assistant $|$ \small Advised by Yuke Zhu, Jim Fan}{Remote}
+    \resumeItemListStart
+      \resumeItem{Aim to develop a new general-purpose agent that can understand and finish instructions in human language based on large foundation models. The agent will leverage the large amount of Internet data.}
+      \resumeItem{Develop an asynchronous training server infrastructure based on Ray, Tianshou and Docker to scale-up the training.}
+      \resumeItem{Propose a new group of benchmark tasks focus on the interaction between human and agents.}
+    \resumeItemListEnd  
 
-   \resumeSubheading
-     {MineDojo Team}{April 2022 - Present}
-     {Undergraduate Research Assistant}{\href{https://github.com/MineDojo}{Github Website}}
-     \resumeItemListStart
-       \resumeItem{Developed a \href{https://github.com/openai/gym}{Gym} environment called FabricDojo for Reinforcement Learning agent based on \href{https://fabricmc.net/}{Fabric}. It is similar to Microsoft's \href{https://github.com/minerllabs/minerl}{MineRL}, but change the action space to be only mouse and keyboard.}
-       \resumeItem{Developed a web browsing Gym environment based on \href{https://www.selenium.dev/}{Selenium}.}
-       \resumeItem{Update MineDojo to MineDojo2 using the new MineRL v1.0 backend, which is based on \href{https://github.com/Hexeption/MCP-Reborn}{MCP-Reborn}}
-     \resumeItemListEnd
+    \resumeSubheading
+      {MineDojo Team}{}{April 2022 - August 2022}
+      {Research Assistant $|$ \small Advised by Jim Fan}{Remote}
+      \resumeItemListStart
+        \resumeItem{Develop a Fabric plugin for Minecraft. Allow agents to control the game through keyboard and mouse actions instead of cheat code actions. Get more detailed observation from the game. }
+      %  \resumeItem{Developed a \href{https://github.com/openai/gym}{Gym} environment called FabricDojo for Reinforcement Learning agent based on \href{https://fabricmc.net/}{Fabric}. It is similar to Microsoft's \href{https://github.com/minerllabs/minerl}{MineRL}, but change the action space to be only mouse and keyboard.}
+      %  \resumeItem{Developed a web browsing Gym environment based on \href{https://www.selenium.dev/}{Selenium}.}
+        \resumeItem{Upgrade MineDojo to v2.0 using the new MineRL backend, allow to run the Video-Pretraining model from OpenAI on all of the MineDojo benchmark tasks.}
+        \resumeItem{Apply the Inverse Dynamic Model from OpenAI to all of the video data provided in MineDojo to generate new tasks. }
+    \resumeItemListEnd
 
-   \resumeSubheading
-   {SOCR MDP Team}{Winter Semester, 2022}
-     {Undergraduate Research Assistant}{\href{https://www.socr.umich.edu/}{Official Website}}
-     \resumeItemListStart
-       \resumeItem{Help to clean up the MIMIC-III dataset. Remove unused columns and punctuations. }
-       \resumeItem{Finetune scikit-learn's pre-trained word2vec language model on MIMIC-III dataset.}
-       \resumeItem{Use the finetuned model to obfuscate the personal information in hospital's database.}
-   \resumeItemListEnd
-   
- \resumeSubHeadingListEnd
-\vspace{-16pt}
+    \resumeSubheading
+    {SOCR MDP Team}{}{Winter and Fall Semester, 2022}
+      {Research Assistant $|$ \small Advised by Ivo D. Dinov, Simeone Marino}{University of Michigan}
+      \resumeItemListStart
+        \resumeItem{Clean up the MIMIC-III dataset. Finetune scikit-learn's pre-trained word2vec language model on the dataset.}
+        \resumeItem{Implement the obfuscation process of the datasifter using word2vec, LightGBM and SDV.}
+        \resumeItem{Implement python plugin for calculating utility and privacy of synthesis data in Virtual Hospital Rshiny APP.}
+    \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+% \vspace{-5pt}
 %
 %-----------PROJECTS-----------
-\section{Previous Works}
+\section{Side Projects}
     \vspace{-5pt}
     \resumeSubHeadingListStart
+      % \resumeProjectHeading
+      %   {\textbf{MineDojo2} $|$ \emph{Python, Gym, Java, Gradle, Jinja2 | Research Project}}{On-going project}
+      %   \resumeItemListStart
+      %     \resumeItem{MineDojo2 is based on MineRL's \href{https://github.com/minerllabs/minerl/releases/tag/v1.0}{new v1.0 backend}. It inherited all of the \href{https://docs.minedojo.org/}{MineDojo's api}, and have better support for mouse and keyboard actions.}
+      %     \resumeItem{The game version is updated to v1.16.5, and there are more observation spaces.}
+      %     \resumeItem{Support OpenAI's \href{https://github.com/openai/Video-Pre-Training}{VPT} pre-trainned model, can train new agent based on that easily.}
+      %     % \resumeItem{The action space more focus on low-level input like mouse and keyboard, so that the agent can act more like a human.}
+      %   \resumeItemListEnd
+      %   \vspace{-13pt}
+      % \resumeProjectHeading
+      %   {\textbf{Contribution to MineRL} $|$ \emph{Python, Java , Gym| Personal Contribution}}{Summer Break, 2022}
+      %   \resumeItemListStart
+      %     \resumeItem{MineRL v1.0 was released in August. It completely reformat its backend so many of its APIs are not working.}
+      %     \resumeItem{Fix the problem that the life status observation always return the default value. \href{https://github.com/minerllabs/minerl/pull/664}{Link to PR}}
+      %     \resumeItem{Implement the equipped item observation on java side, also fix problem of same observation on python side. \href{https://github.com/minerllabs/minerl/pull/665}{Link to PR}}
+      %   \resumeItemListEnd
+      %   \vspace{-13pt}
+      % \resumeProjectHeading
+      %   {\textbf{FabricDojo} $|$ \emph{Python, Gym, Java, GRPC, Mixin, Gradle | Research Project}}{Summer Break, 2022}
+      %   \resumeItemListStart
+      %     \resumeItem{FabricDojo is a Gym enviroment for Reinforcement Learning agent to play Minecraft. It is based on Fabric, which is a mod maker of Minecraft.}
+      %     \resumeItem{Use GRPC and localhost socket to communicate between Java and python, run 2 times faster than Microsoft MineRL in benchmark.}
+      %     \resumeItem{Unlike Microsoft MineRL only use Minecraft 1.12, it can be used on the latest Minecraft Game and can be updated to new version easily. }
+      %     \resumeItem{The action space more focus on low-level input like mouse and keyboard, so that the agent can act more like a human.}
+      %   \resumeItemListEnd
+      %   \vspace{-13pt}
+      % \resumeProjectHeading
+      %   {\textbf{SOCR-DataSifter} $|$ \emph{Python | MDP SOCR Project}}{Winter Semester, 2022}
+      %   \resumeItemListStart
+      %     \resumeItem{\href{https://socr.umich.edu/HTML5/DataSifter/}{DataSifter} is a method to share real clinical data containing clearly identifiable personal health information (PHI) without compromising either the value of the data or by introducing a substantial risk for re-identification of individuals.}
+      %     \resumeItem{Use LightGBM to find out keywords that contibute most to the information that need to be obfuscated.}
+      %     \resumeItem{Finetune language model on MIMIC-III dataset. Obfuscate the data using the language model by finding synonymous substitution.}
+      %     \resumeItem{Use SDV Privacy-Utility metrics to evaluate the effect of the whole model.}
+      %   \resumeItemListEnd
+      %   \vspace{-13pt}
       \resumeProjectHeading
-        {\textbf{MineDojo2} $|$ \emph{Python, Gym, Java, Gradle, Jinja2 | Research Project}}{On-going project}
+        {\textbf{Arceus} $|$ \emph{Personal Project}}{Winter Semester, 2022}
         \resumeItemListStart
-          \resumeItem{MineDojo2 is based on MineRL's \href{https://github.com/minerllabs/minerl/releases/tag/v1.0}{new v1.0 backend}. It inherited all of the \href{https://docs.minedojo.org/}{MineDojo's api}, and have better support for mouse and keyboard actions.}
-          \resumeItem{The game version is updated to v1.16.5, and there are more observation spaces.}
-          \resumeItem{Support OpenAI's \href{https://github.com/openai/Video-Pre-Training}{VPT} pre-trainned model, can train new agent based on that easily.}
-          % \resumeItem{The action space more focus on low-level input like mouse and keyboard, so that the agent can act more like a human.}
+          \resumeItem{Build the Gym environment for traning agents to play Pokemon Gold. Use Gym Retro as the game simulator.}
+          \resumeItem{Use the RAM Map to hack and read the game's running status to provide the observation for the agents.}
+          \resumeItem{Use Ray Parallel Env to scale-up traning. Implement serveral rgb wrapper for traning stability.}
         \resumeItemListEnd
         \vspace{-13pt}
       \resumeProjectHeading
-        {\textbf{Contribution to MineRL} $|$ \emph{Python, Java , Gym| Personal Contribution}}{Summer Break, 2022}
+        {\textbf{Probing into the Reason behind Wasserstein GAN’s Success} $|$ \emph{Machine Learning Course Project}}{Fall Semester, 2021}
         \resumeItemListStart
-          \resumeItem{MineRL v1.0 was released in August. It completely reformat its backend so many of its APIs are not working.}
-          \resumeItem{Fix the problem that the life status observation always return the default value. \href{https://github.com/minerllabs/minerl/pull/664}{Link to PR}}
-          \resumeItem{Implement the equipped item observation on java side, also fix problem of same observation on python side. \href{https://github.com/minerllabs/minerl/pull/665}{Link to PR}}
-        \resumeItemListEnd
-        \vspace{-13pt}
-      \resumeProjectHeading
-        {\textbf{FabricDojo} $|$ \emph{Python, Gym, Java, GRPC, Mixin, Gradle | Research Project}}{Summer Break, 2022}
-        \resumeItemListStart
-          \resumeItem{FabricDojo is a Gym enviroment for Reinforcement Learning agent to play Minecraft. It is based on Fabric, which is a mod maker of Minecraft.}
-          \resumeItem{Use GRPC and localhost socket to communicate between Java and python, run 2 times faster than Microsoft MineRL in benchmark.}
-          \resumeItem{Unlike Microsoft MineRL only use Minecraft 1.12, it can be used on the latest Minecraft Game and can be updated to new version easily. }
-          \resumeItem{The action space more focus on low-level input like mouse and keyboard, so that the agent can act more like a human.}
-        \resumeItemListEnd
-        \vspace{-13pt}
-      \resumeProjectHeading
-        {\textbf{SOCR-DataSifter} $|$ \emph{Python | MDP SOCR Project}}{Winter Semester, 2022}
-        \resumeItemListStart
-          \resumeItem{\href{https://socr.umich.edu/HTML5/DataSifter/}{DataSifter} is a method to share real clinical data containing clearly identifiable personal health information (PHI) without compromising either the value of the data or by introducing a substantial risk for re-identification of individuals.}
-          \resumeItem{Use LightGBM to find out keywords that contibute most to the information that need to be obfuscated.}
-          \resumeItem{Finetune language model on MIMIC-III dataset. Obfuscate the data using the language model by finding synonymous substitution.}
-          \resumeItem{Use SDV Privacy-Utility metrics to evaluate the effect of the whole model.}
-        \resumeItemListEnd
-        \vspace{-13pt}
-      \resumeProjectHeading
-        {\textbf{Arceus} $|$ \emph{Python, Gym | Personal Project}}{Winter Semester, 2022}
-        \resumeItemListStart
-          \resumeItem{A Gym environment for agent to play with Pokemon Gold. The simulator is based on \href{https://openai.com/blog/gym-retro/}{Gym Retro}.}
-          \resumeItem{The action space is just Game Boy keys. The observation space use the \href{https://datacrystal.romhacking.net/wiki/Pok\%C3\%A9mon_Gold_and_Silver:RAM_map}{RAM Map} to read game status.}
-          \resumeItem{The agent now can use BFS to traverse the map, the next step is to use PPO algorithm to train the bot do more job.}
-        \resumeItemListEnd
-        \vspace{-13pt}
-      \resumeProjectHeading
-        {\textbf{Reimplement of WGAN} $|$ \emph{Pytorch | EECS 545 Final Project}}{Fall Semester, 2021}
-        \resumeItemListStart
-          \resumeItem{Reimplement the Wasserstein Generative Adversarial Network. Train on CelebA, LSUN and animate character sets.}
-          \resumeItem{Analysis the loss function of WGAN and porbe into the reason behind its success.}
-          \resumeItem{Compare WGAN's FID score with the widely used DCGAN. Show that WGAN do better than DCGAN.}
+          \resumeItem{Implement Wasserstein in Generative Adversarial Network, as well as WGAN with gradient penalty.}
+          \resumeItem{State the problem of GAN loss function. Analysis the modifications made by WGAN.}
+          \resumeItem{Train WGAN on three datasets: LSUN Bedroom, CelebA, and Animefaces. Compare WGAN's FID score with the widely used DCGAN. Show the training stability of WGAN.}
         \resumeItemListEnd
         % \vspace{-13pt}
       
@@ -272,9 +282,9 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages}{: Python, Java, C/C++, JavaScript} \\
-     \textbf{Libraries and tools}{: Pytorch, Gym, Gradle, Selenium, Mixin, GRPC} \\
-     \textbf{Developing Software}{: VS Code, Jupyter Notebook, Android Studio, Matlab, \LaTeX, git} \\
+     \textbf{Skills}{: Reinforcement Learning, Training Infrastructure Development, Computer Vision, Natural Language Processing} \\
+     \textbf{Software}{: Gym, Ray, Tianshou, Docker, Pytorch, Gradle, Selenium, Mixin, GRPC, Unity} \\
+     \textbf{Programming Language}{: Python, Java, JavaScript, C++, C\#} \\
     }}
  \end{itemize}
  \vspace{-16pt}
