@@ -20,10 +20,25 @@ priority: 10
 
 ## Project 1
 A VR project that simulate the CSE building.
-![p1](pic01.jpg)
-[Learn more](https://drive.google.com/file/d/1g-xUIm530ypMFkjll02E3rPawakQzaxw/view?usp=sharing)
+
+<iframe
+    width="640"
+    height="480"
+    src="https://www.youtube.com/embed/9N9zz3_y5Ps"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
 
 ## Project 2
 An AR project that plant trees and fight with enemies inside Ann Arbor. Use mapbox for the GPS locating.
-![p2](pic02.jpg)
-[Learn More](https://drive.google.com/file/d/16D_MePnuCfGZUyNxLk7_OKmSRGEXBEpN/view?usp=sharing)
+<iframe
+    width="640"
+    height="480"
+    src="https://www.youtube.com/embed/wL9UqLRBnA8"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen
+>
+</iframe>
