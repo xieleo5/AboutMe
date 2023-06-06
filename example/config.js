@@ -6,8 +6,8 @@ module.exports = {
     author: 'Yuqi Xie',
     authorAlternative: '谢雨齐',
     introduction: [
-        'Hi, I am Yuqi Xie, you can also call me Leo. I am a Computer Science student study at [Umich](https://cse.engin.umich.edu/). Before I transferred to Umich, I was majoring in ECE at Shanghai Jiaotong University ([SJTU](https://cse.engin.umich.edu/))',
-        'My research interests mainly lines in [foundation models](https://arxiv.org/abs/2108.07258), multimodal learning, robotics and reinforcement learning. I am currently working with [Dr. Jim Fan](https://jimfan.me/) to develop general-purpose AI agents.',
+        'Hi, I am Yuqi Xie, you can also call me Leo. I am a Computer Science MS student study at [UT Austin](https://www.cs.utexas.edu/). I obtained my Bachelor\'s degree in ECE at Shanghai Jiaotong University ([SJTU](https://cse.engin.umich.edu/)) and Bachelor\'s degree in CS at [Umich](https://cse.engin.umich.edu/).',
+        'My research interests mainly lines in [foundation models](https://arxiv.org/abs/2108.07258), multimodal learning, robotics and reinforcement learning. I am currently working with [Dr. Jim Fan](https://jimfan.me/) and [Prof. Yuke Zhu](https://www.cs.utexas.edu/~yukez/) to develop general-purpose AI agents. I\'ve just released my first publication [Voyager](https://voyager.minedojo.org/).'
     ],
     avatar: 'avatar.jpg',
     professions: [
@@ -53,7 +53,12 @@ module.exports = {
     googleAnalyticTrackingId: process.env.GA_TRACKING_ID || 'UA-XXXXXXXXX-X',
     education: [
         {
-            date: 'Sep 2021 - Present',
+            date: 'Aug 2023 - Present',
+            icon: 'university',
+            title: 'M.S. in Computer Science',
+            location: 'University of Texas at Austin',
+        }, {
+            date: 'Sep 2021 - May 2023',
             icon: 'university',
             title: 'B.S.E. in Computer Science',
             location: 'University of Michigan',

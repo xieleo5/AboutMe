@@ -9,7 +9,7 @@ authors:
     url: "https://github.com/xieleo5"
   - "xieleo"
 path: "project/arceus"
-selected: true
+selected: false
 cover: "./preview.png"
 links:
   - name: "github"

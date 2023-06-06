@@ -99,20 +99,11 @@ const Post = ({ data }) => {
               {time.join(', ')}
             </div>
             <Row gutter={[20, 20]}>
-              <Col xs={24} sm={24} md={24} lg={fluid ? 12 : 24} xl={fluid ? 16 : 24}>
+              <Col xs={24} sm={24} md={24} lg={24} xl={24}>
                 <CodeBox title="Abstract" style={{ height: '100%' }}>
                   <p style={{ marginBottom: '0' }} dangerouslySetInnerHTML={{ __html: Utils.parseMarkDown(excerpt, true) }} />
                 </CodeBox>
               </Col>
-              { fluid ? (
-                <Col xs={24} sm={24} md={24} lg={12} xl={8}>
-                  <Row align="middle" style={{ height: '100%' }}>
-                    <Col xs={24}>
-                      <Img fluid={fluid} title={title} alt={title} />
-                    </Col>
-                  </Row>
-                </Col>
-              ) : null }
             </Row>
 
             { state.locked

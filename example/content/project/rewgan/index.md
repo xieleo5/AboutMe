@@ -9,7 +9,7 @@ authors:
     url: "https://github.com/xieleo5"
   - "xieleo"
 path: "project/rewgan"
-selected: true
+selected: false
 cover: "./preview.png"
 links:
   - name: "pdf"

@@ -74,7 +74,7 @@ const SelectedProject = () => {
         {data.allMdx &&
           data.allMdx.edges.map((val, key) => (
             // eslint-disable-next-line react/no-array-index-key
-            <Col key={key} xs={24} sm={24} md={24} lg={24}>
+            <Col key={key} xs={24} sm={12} md={24} lg={12}>
               <ProjectCard data={val} tagsMap={tagsMap} />
             </Col>
           ))}
