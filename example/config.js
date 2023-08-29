@@ -6,8 +6,11 @@ module.exports = {
     author: 'Yuqi Xie',
     authorAlternative: '谢雨齐',
     introduction: [
-        'Hi, I am Yuqi Xie, you can also call me Leo. I am a Computer Science MS student study at [UT Austin](https://www.cs.utexas.edu/). I obtained my Bachelor\'s degree in ECE at Shanghai Jiaotong University ([SJTU](https://cse.engin.umich.edu/)) and Bachelor\'s degree in CS at [Umich](https://cse.engin.umich.edu/).',
-        'My research interests mainly lines in [foundation models](https://arxiv.org/abs/2108.07258), multimodal learning, robotics and reinforcement learning. I am currently working with [Dr. Jim Fan](https://jimfan.me/) and [Prof. Yuke Zhu](https://www.cs.utexas.edu/~yukez/) to develop general-purpose AI agents. I\'ve just released my first publication [Voyager](https://voyager.minedojo.org/).'
+        'Hi, I am Yuqi Xie, you can also call me Leo. I am a Computer Science MS student studying at [UT Austin](https://www.cs.utexas.edu/). I obtained my Bachelor\'s degree in ECE from Shanghai Jiaotong University ([SJTU](https://cse.engin.umich.edu/)) and Bachelor\'s degree in CS from [Umich](https://cse.engin.umich.edu/).',
+        // 'My research interests mainly lines in [foundation models](https://arxiv.org/abs/2108.07258), multimodal learning, robotics and reinforcement learning. I am currently working with [Dr. Jim Fan](https://jimfan.me/) and [Prof. Yuke Zhu](https://www.cs.utexas.edu/~yukez/) to develop general-purpose AI agents. I\'ve just released my first publication [Voyager](https://voyager.minedojo.org/).',
+        'I\'m interested in embodied agents and Large Language Models. I previously worked with [Dr. Jim Fan](https://jimfan.me/) from the NVIDIA research team. We published [Voyager](https://voyager.minedojo.org/) together. Now, I\'m working in [RPL lab](https://rpl.cs.utexas.edu/) advised by [Prof. Yuke Zhu](https://www.cs.utexas.edu/~yukez/).',
+        // 'I\'m a fan of Nintendo and my favorite game is Pokemon. I also like to watch Animate. '
+
     ],
     avatar: 'avatar.jpg',
     professions: [
