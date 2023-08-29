@@ -79,6 +79,15 @@
     \end{tabular*}\vspace{-7pt}
 }
 
+\newcommand{\resumePubHeading}[3]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small{#3}} \\
+    \end{tabular*}\\
+    \vspace*{1pt}
+    \small{#2}\\\vspace{-7pt}
+}
+
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
@@ -117,8 +126,8 @@
 
 \begin{center}
     {\Large \textbf{Yuqi Xie} } \\ \vspace{1pt}
-    1859 Shirley Ln Apt B7, Ann Arbor, MI, 48105 \\ \vspace{1pt}
-    \small \raisebox{-0.1\height}\faPhone\ 734-510-4285 ~ \href{mailto:xieleo@umich.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{xieleo@umich.edu}} ~ 
+    912 W 22nd Street Apt 208, Austin, TX, 78705 \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ 737-341-4564 ~ \href{mailto:xieleo@utexas.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{xieleo@utexas.edu}} ~ 
     %\href{https://linkedin.com/in//}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/username}}  ~
     \href{https://xieleo5.github.io}{\raisebox{-0.2\height}\faGithub\ \underline{xieleo5.github.io}}
     \vspace{-8pt}
@@ -127,16 +136,20 @@
 
 %-----------EDUCATION-----------
 \section{Education}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {University of Texas at Austin}{}{Sep. 2023 -- Present}
+      {Master's in Computer Science - College of Natural Science}{Texas, U.S.}
+      % \begin{itemize}
+      %   \item \small Highlighted Courses: Robot Learning, Advanced topics in Computer Vision
+      % \end{itemize}
+    % \vspace*{5.0\multicolsep}
+  \resumeSubHeadingListEnd
   \resumeSubHeadingListStart
     \resumeSubheading
       {University of Michigan, Ann Arbor}{}{Sep. 2021 -- Apr. 2023}
       {Bachelor of Computer Science - College of Engineering}{Michigan, U.S.}
-    \begin{itemize}
-      \item \small Highlighted Courses: Machine Learning, Computer Vision, Operating System, Web Systems, XR Development
-      \item \small Research Interests: Reinforcement Learning, Embodied agents, Foundation Models, Multi-modal Learning, Robotics
-      \item \small GPA: 3.96/4.0
-    \end{itemize}
-    \vspace*{5.0\multicolsep}
+    % \vspace*{5.0\multicolsep}
   \resumeSubHeadingListEnd
   \resumeSubHeadingListStart
     \resumeSubheading
@@ -144,76 +157,151 @@
       {Bachelor of Electrical and Computer Engineering - UM-SJTU Joint Institute}{Shanghai, China}
   \resumeSubHeadingListEnd
 
+%-----------PROJECTS-----------
+\section{Publication}
+% \vspace{-15pt}
+\resumeSubHeadingListStart
+  \resumePubHeading
+    {\textbf{Voyager: An Open-Ended Embodied Agent with Large Language Models}}
+    {Guanzhi Wang, \textbf{Yuqi Xie}, Yunfan Jiang, Ajay Mandlekar, Chaowei Xiao, Yuke Zhu, Linxi Fan, Anima Anandkumar}
+    {In submission, 2023. \href{https://arxiv.org/abs/2305.16291}{\underline{Arxiv}}}
+    % a link to arxiv
+    
+    % \vspace{-15pt}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
 %-----------RESEARCH----------- 
 \section{Research Experience}
   \resumeSubHeadingListStart
+    % \resumeSubheading
+    %   {UT Austin Robot Perception and Learning Lab}{}{August 2023 - Present}
+    %   {Graduate Research Assistant $|$ \small Advised by Prof. Yuke Zhu}{Texas, U.S.}
+    %   \resumeItemListStart
+    %     \resumeItem{
+    %       \textbf{Enhancing Realism of MetaHuman: A Fusion of Motion, Voice and Appearance}
+          
+    %       MetaHuman is released in Unreal Engine for building realistic human inside games. This project aims to build a MetaHuman that looks, talk and move like a real human to remove the uncanny valley of current 3D human models. \vspace*{-2pt}
+    %       \begin{itemize}[leftmargin=*]
+    %         \item Voice and facial expression: Use Azure Viseme API to generate facial position and sync through Unreal live link face. 
+    %         \item General motion: Synthesis data using 3D mesh reconstruction from 2D video to train a motion control model.
+    %         \item Appearance: The generation of realistic textures is achieved through utilizing Diffusion-based techniques.
+    %       \end{itemize}
+    %     }
+    %   \resumeItemListEnd
     \resumeSubheading
-    {Collaboration with NVIDIA and UT Austin}{}{April 2022 - Present}
+    {Collaboration with NVIDIA and UT Austin}{}{April 2022 - August 2023}
     {Undergraduate Research Assistant $|$ \small Advised by Prof. Yuke Zhu, Dr. Linxi "Jim" Fan}{Remote}
     \resumeItemListStart
       \resumeItem{
-        \textbf{Development For \textsc{MineDojo2}} 
+        \textbf{Voyager: An Open-Ended Embodied Agent with Large Language Models}
         
-        \textsc{MineDojo} is a framework built on the popular \textit{Minecraft} game that features a simulation suite with thousands of diverse open-ended tasks and an Internet-scale knowledge base. 
-        My contributions include: 
+        Voyager is the first lifelong learning agent that plays Minecraft purely in-context. It continuously improves itself by writing, refining, committing, and retrieving code from a skill library, all \textbf{without relying on gradient descent}.
         \vspace*{-2pt}
         \begin{itemize}[leftmargin=*]
-          \item Dramatically modify the infrastructure, make the interface more research friendly and the environment more scalable for training a large-scale open-ended agent.
-          \item Implement a plugin to support a universal computer using interface instead of cheating commands for an agent to finish zero-shot tasks like a human.
-          \item Increase the observation data transition speed between the game and the agent by 2x using on grpc protocol. 
-          \item Enable GPU acceleration for the rendering process of \textit{Minecraft} game during training inside Docker containers.
+            \item Developed the asynchronous backend server in JavaScript responsible for agent control and game observation.
+            \item Leveraged OpenAI's GPT API to generate \textbf{Code as Policy} and used \textbf{Chain-of-Thought} prompting to improve code.
+            \item Created the control primitives as both helper functions and examples of code writing.
+            \item Designed the curriculum, action, self-verification, and skill library execution loop for the agent.
+            \item Proposed the \textbf{warm-up schedule} and the \textbf{auto-resume mechanism} to optimize the training process.
+            \item Conducted experiments on downstream unseen tasks and involved human interactions for building tasks.
+            % \item Increased the observation data transition speed between the game and the agent by 2x using the gRPC protocol.
+            % \item Enabled GPU acceleration for the rendering process of the \textit{Minecraft} game during training inside Docker containers.
+        \end{itemize}
+      }
+      % \resumeItem{
+      %   \textbf{Embodied AI agent based on \textsc{MineDojo2}}
+
+      %   We aim to build a general-purpose embodied agent that can finish a wider range of zero-shot tasks under various circumstances in the game based on \textsc{MineDojo2} framework. My contributions include:
+      %   \vspace*{-2pt}
+      %   \begin{itemize}[leftmargin=*]
+      %     \item Create baseline benchmark suites using the state-of-the-art OpenAI Video-PreTraining model.
+      %     \item Apply Internet-scale pre-trained models on 300K Youtube videos in \textsc{MineDojo} to retrieve expert actions from human operations as data for large-scale training.
+      %     \item Experiment with large-scale multi-modal Transformers on zero-shot human language driving \textit{Minecraft} tasks.
+      %   \end{itemize}
+      % }
+      \resumeItem{
+        \textbf{Auto Machine Learning Code Generation with Large Language Model} 
+        
+        Existing AutoML tools, such as Auto-Sklearn, are based on brute force searching and Bayesian optimization. Our goal is to train a code generation model to achieve an end-to-end approach from DataFrames to code for the best model.
+        \vspace*{-2pt}
+        \begin{itemize}[leftmargin=*]
+          \item Collected and cleaned web-scaled data from solutions to Kaggle competitions.
+          \item Synthesized data using the optimal model searched by current AutoML algorithm.
+          \item Fine-tuned Codex model with \textbf{RLHF} using the accuracy of the generated code as the reward.
+          % \item Increase the observation data transition speed between the game and the agent by 2x using on grpc protocol. 
+          % \item Enable GPU acceleration for the rendering process of \textit{Minecraft} game during training inside Docker containers.
         \end{itemize}
       }
       \resumeItem{
-        \textbf{Embodied AI agent based on \textsc{MineDojo2}}
-
-        We aim to build a general-purpose embodied agent that can finish a wider range of zero-shot tasks under various circumstances in the game based on \textsc{MineDojo2} framework. My contributions include:
+        \textbf{Development for \textsc{MineDojo2}}
+        
+        \textsc{MineDojo} is a framework built on the popular \textit{Minecraft} game, featuring a simulation suite with thousands of diverse open-ended tasks and an Internet-scale knowledge base. 
+        My contributions include: 
         \vspace*{-2pt}
         \begin{itemize}[leftmargin=*]
-          \item Create baseline task suites using the state-of-the-art OpenAI Video-PreTraining model.
-          \item Apply Internet-scale pre-trained models on 300K Youtube videos in \textsc{MineDojo} to retrieve expert actions from human operations as data for large-scale training.
-          \item Experiment with large-scale multi-modal Transformers on zero-shot human language driving \textit{Minecraft} tasks.
+            \item Dramatically modified the backend infrastructure to allow the environment to run faster in a later version of the game, and making the environment more scalable for training a large-scale open-ended agent.
+            \item Implemented a universal interface instead of cheating commands for an agent to complete zero-shot tasks like a human.
+            % \item Increasing the observation data transition speed between the game and the agent by 2x using the gRPC protocol. 
+            % \item Enabling GPU acceleration for the rendering process of the \textit{Minecraft} game during training inside Docker containers.
         \end{itemize}
-      }
+    }
     \resumeItemListEnd  
-    \resumeSubheading
-    {SOCR MDP Team}{}{Winter and Fall Semester, 2022}
-      {Undergraduate Research Assistant $|$ \small Advised by Prof. Ivo D. Dinov, Prof. Simeone Marino}{University of Michigan}
-      \resumeItemListStart
-        \resumeItem{\textbf{Datasifter---Sensitive Information Obfuscator}
+    % \resumeSubheading
+    % {SOCR MDP Team}{}{Winter and Fall Semester, 2022}
+    %   {Undergraduate Research Assistant $|$ \small Advised by Prof. Ivo D. Dinov, Prof. Simeone Marino}{University of Michigan}
+    %   \resumeItemListStart
+    %     \resumeItem{\textbf{Datasifter---Sensitive Information Obfuscator}
 
-        Datasifter is an obfuscator to prevent patients' sensitive information to be leaked from Hospital databases. The obfuscation is based on Machine Learning and Natural Language Processing technologies. My contributions includes:
-        \vspace*{-2pt}
-        \begin{itemize}[leftmargin=*]
-          \item Experiment with pre-trained NLP models and ML metrics to implement the obfuscation part.
-          \item Implement a script based on ML metrics to evaluate the effectiveness of data synthesis and data obfuscation.
-          \item Improve the speed of the app by 10x by applying multi-thread programming.
-        \end{itemize}
-        }
-    \resumeItemListEnd
+    %     Datasifter is an obfuscator to prevent patients' sensitive information to be leaked from Hospital databases. The obfuscation is based on Machine Learning and Natural Language Processing technologies. My contributions includes:
+    %     \vspace*{-2pt}
+    %     \begin{itemize}[leftmargin=*]
+    %       \item Experiment with pre-trained NLP models and ML metrics to implement the obfuscation part.
+    %       \item Implement a script based on ML metrics to evaluate the effectiveness of data synthesis and data obfuscation.
+    %       \item Improve the speed of the app by 10x by applying multi-thread programming.
+    %     \end{itemize}
+    %     }
+    % \resumeItemListEnd
     
   \resumeSubHeadingListEnd
 \vspace{-15pt}
 %
 %-----------PROJECTS-----------
 \section{Projects}
-    \vspace{-5pt}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-        {\textbf{Probing into the Reason behind Wasserstein GAN’s Success} $|$ \emph{Machine Learning Course Project}}{Fall Semester, 2021}
-        \resumeItemListStart
-          \resumeItem{Implement Wasserstein in Generative Adversarial Network, as well as WGAN with gradient penalty.}
-          \resumeItem{State the problem of the original GAN loss function and analysis the modifications made by WGAN mathematically.}
-          \resumeItem{Train WGAN on three datasets: LSUN Bedroom, CelebA, and Animefaces. Compare the stability of WGAN's loss function with the widely-used DCGAN using FID scores.}
-        \resumeItemListEnd
-        \vspace{-15pt}
-      \resumeProjectHeading
-        {\textbf{Arceus--Pokemon Gold Gym Environment} $|$ \emph{Personal Project}}{Winter Semester, 2022}
-        \resumeItemListStart
-          \resumeItem{Build the Gym environment for traning agents to play the \textit{Pokemon} game using keyboard inputs.}
-          \resumeItem{Implement several RGB wrappers for data augmentation to train a robust agent.}
-          \resumeItem{Scale-up the training environment by applying multi-processing, increase the total throughput by 5x.}
-        \resumeItemListEnd
+  \resumeSubHeadingListStart
+  \vspace{-5pt}
+    \resumeProjectHeading
+    {\textbf{Visual Language Model with Multi-modal Reasoning} $|$ \emph{Major Design Project}}{Summer Semester, 2023}
+    \resumeItemListStart
+      \resumeItem{Collected and synthesized multi-modal training data from open source datasets such as MIMIC-IT, VIST, VQA, .etc}
+      \resumeItem{Fine-tuned \textbf{Vicuna-7B} with an image encoder and decoder from \textbf{Stable Diffusion} 2.1 on the datasets.}
+      \resumeItem{Created a user interface for chatting with the model using image and text based on Gradio.}
+    \resumeItemListEnd
+    \vspace{-20pt}
+    \resumeProjectHeading
+    {\textbf{Insta485} $|$ \emph{Flask, React, JavaScript, Python, SQL, AWS}}{Winter Semester, 2021}
+    \resumeItemListStart
+      \resumeItem{Built the client side dynamic pages using React and JavaScript.}
+      \resumeItem{Created the server side endpoints and databases using Flask, Python, and SQL.}
+      \resumeItem{Implemented a search engine using tf-idf scoring and map-reduce techniques.}
+      % \resumeItem{Deploy to Amazon Web Service using Nginx.}
+    \resumeItemListEnd
+    \vspace{-20pt}
+    \resumeProjectHeading
+    {\textbf{Probing into the Reason behind Wasserstein GAN’s Success} $|$ \emph{Machine Learning Course Project}}{Fall Semester, 2021}
+    \resumeItemListStart
+      \resumeItem{Implemented Wasserstein in Generative Adversarial Network, as well as WGAN with gradient penalty.}
+      \resumeItem{Stated the problem of the original GAN loss function and analysis the modifications made by WGAN mathematically.}
+      \resumeItem{Compared the stability of WGAN's loss function with the widely-used DCGAN using FID scores.}
+    \resumeItemListEnd
+        % \vspace{-15pt}
+      % \resumeProjectHeading
+      %   {\textbf{Arceus--Pokemon Gold Gym Environment} $|$ \emph{Personal Project}}{Winter Semester, 2022}
+      %   \resumeItemListStart
+      %     \resumeItem{Build the Gym environment for traning agents to play the \textit{Pokemon} game using keyboard inputs.}
+      %     \resumeItem{Implement several RGB wrappers for data augmentation to train a robust agent.}
+      %     \resumeItem{Scale-up the training environment by applying multi-processing, increase the total throughput by 5x.}
+      %   \resumeItemListEnd
+
     \resumeSubHeadingListEnd
 \vspace{-15pt}
 
@@ -229,9 +317,9 @@
 \section{Technical Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Skills}{: Reinforcement Learning, Training Infrastructure Development, Computer Vision, Natural Language Processing} \\
-     \textbf{Software and Libraries}{: Gym, Ray, Tianshou, Docker, Pytorch, Gradle, Selenium, Mixin, GRPC, Unity, Unreal} \\
-     \textbf{Programming Language}{: Python, Java, JavaScript, C++, C\#} \\
+     \textbf{Skills}{: Propmt Engineering, Natural Language Processing, Reinforcement Learning, Computer Vision} \\
+     \textbf{Software and Libraries}{: Pytorch, Hugging Face, Gym, Unreal, Ray, Docker, React, Selenium, Unity} \\
+     \textbf{Programming Language}{: Python, Java, JavaScript, SQL, C++} \\
     }}
  \end{itemize}
  \vspace{-16pt}
