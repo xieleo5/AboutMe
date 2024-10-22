@@ -14,7 +14,7 @@ cover: "./pull.png"
 links:
   - name: "github"
     file: "https://minedojo.org/"
-priority: 1
+priority: 3
 ---
 
 # Voyager: An Open-Ended Embodied Agent with Large Language Models

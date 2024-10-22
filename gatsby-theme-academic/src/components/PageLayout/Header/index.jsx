@@ -59,11 +59,11 @@ export default () => {
             {/*    Contact */}
             {/*  </Link> */}
             {/* </li> */}
-            <li className={style.navItem}>
+            {/* <li className={style.navItem}>
               <Link to="/experience/" onClick={toggleMenu} activeClassName={style.anchorActive}>
                 Experience
               </Link>
-            </li>
+            </li> */}
             <li className={style.navItem}>
               <Link to="/project/" onClick={toggleMenu} partiallyActive activeClassName={style.anchorActive}>
                 Project

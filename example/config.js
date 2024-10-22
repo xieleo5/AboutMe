@@ -6,10 +6,9 @@ module.exports = {
     author: 'Yuqi Xie',
     authorAlternative: '谢雨齐',
     introduction: [
-        'Hi, I am Yuqi Xie, you can also call me Leo. I am a Computer Science MS student studying at [UT Austin](https://www.cs.utexas.edu/). I obtained my Bachelor\'s degree in ECE from Shanghai Jiaotong University ([SJTU](https://cse.engin.umich.edu/)) and Bachelor\'s degree in CS from [Umich](https://cse.engin.umich.edu/).',
-        // 'My research interests mainly lines in [foundation models](https://arxiv.org/abs/2108.07258), multimodal learning, robotics and reinforcement learning. I am currently working with [Dr. Jim Fan](https://jimfan.me/) and [Prof. Yuke Zhu](https://www.cs.utexas.edu/~yukez/) to develop general-purpose AI agents. I\'ve just released my first publication [Voyager](https://voyager.minedojo.org/).',
-        'I\'m interested in embodied agents and Large Language Models. I previously worked with [Dr. Jim Fan](https://jimfan.me/) from the NVIDIA research team. We published [Voyager](https://voyager.minedojo.org/) together. Now, I\'m working in [RPL lab](https://rpl.cs.utexas.edu/) advised by [Prof. Yuke Zhu](https://www.cs.utexas.edu/~yukez/).',
-        // 'I\'m a fan of Nintendo and my favorite game is Pokemon. I also like to watch Animate. '
+        'Hi, I am Yuqi Xie, you can also call me Leo. I am a Computer Science MS student at [UT Austin](https://www.cs.utexas.edu/) in [RPL lab](https://rpl.cs.utexas.edu/) advised by [Prof. Yuke Zhu](https://www.cs.utexas.edu/~yukez/). I obtained my Bachelor\'s degree in ECE from Shanghai Jiaotong University ([SJTU](https://cse.engin.umich.edu/)) and Bachelor\'s degree in CS from [Umich](https://cse.engin.umich.edu/).',
+        'I I\'m a Research Intern at [GEAR](https://research.nvidia.com/labs/gear/) advised by [Dr. Jim Fan](https://jimfan.me/). We are aiming to build generalist model for humanoid robots. If you are interested in joining us, please feel free to reach out to me.',
+        'Fun Facts: I\'m a great fan of Pokemon. I also watch a lot Anime. '
 
     ],
     avatar: 'avatar.jpg',
@@ -37,8 +36,8 @@ module.exports = {
     },
     social: [
         {
-            url: '/resume.pdf',
-            icon: ['ai', 'cv'],
+            url: 'https://scholar.google.com/citations?user=bGB6wacAAAAJ&hl=en',
+            icon: ['fab', 'google'],
         },
         {
             url: 'https://github.com/xieleo5',
@@ -48,6 +47,10 @@ module.exports = {
             url: 'https://www.linkedin.com/in/yuqi-xie-ba87a8223/',
             icon: ['fab', 'linkedin'],
         },
+        {
+            url: 'https://x.com/yuqi_xie5',
+            icon: ['fab', 'twitter'],
+        }
     ],
     // facebook: 'https://www.facebook.com/rolwin.monteiro',
     // instagram: 'https://www.instagram.com/reevan100/',
@@ -73,13 +76,13 @@ module.exports = {
         }],
     interests: [
         {
-            title: 'Foundation Models',
+            title: 'Humanoid Robots',
+        }, {
+            title: 'Robotics',
         }, {
             title: 'General-purpose Agents',
         }, {
             title: 'Multimodal Learning',
-        }, {
-            title: 'Robotics',
         }, {
             // icon: 'linux',
             title: 'Reinforcement Learning',
@@ -90,62 +93,72 @@ module.exports = {
             position: 'left',
             data: [
                 {
+                    date: 'Jan 2023 - Present',
+                    title: 'Research Intern',
+                    location: 'Hybrid',
+                    description: 'Work in NVIDIA [GEAR](https://research.nvidia.com/labs/gear/) team.',
+                },
+                {
                     date: 'Mar 2022 - Present',
                     title: 'Research Assistant',
                     location: 'Remote',
                     description: 'Work in [MineDojo](https://minedojo.org/) team',
-                }, {
-                    date: 'Feb 2022 - Present',
-                    title: 'Research Assistant',
-                    location: 'University of Michigan',
-                    description: 'Work in [SOCR](https://www.socr.umich.edu/) team with Prof. [Simeone](http://www-personal.umich.edu/~simeonem/) on [Datasifter2](https://socr.umich.edu/HTML5/DataSifter/)',
-                },
+                }
+                // {
+                //     date: 'Feb 2022 - Present',
+                //     title: 'Research Assistant',
+                //     location: 'University of Michigan',
+                //     description: 'Work in [SOCR](https://www.socr.umich.edu/) team with Prof. [Simeone](http://www-personal.umich.edu/~simeonem/) on [Datasifter2](https://socr.umich.edu/HTML5/DataSifter/)',
+                // },
             ],
-        }, {
-            title: 'Coursework',
-            position: 'right',
-            data: [
-                {
-                    title: 'EECS545 Machine Learning',
-                    date: 'Fall',
-                    location: 'A',
-                }, {
-                    title: 'EECS498.008 Deep Learning for Computer Vision',
-                    date: 'Winter',
-                    location: 'A',
-                }, {
-                    title: 'EECS482 Introduction to Operating Systems',
-                    date: 'Winter',
-                    location: 'A',
-                }, {
-                    title: 'EECS376 Foundations of Computer Science',
-                    date: 'Fall',
-                    location: 'A',
-                }, {
-                    title: 'EECS281 Data Structures and Algorithms',
-                    date: 'Fall',
-                    location: 'A',
-                },
-            ],
-        }, {
-            title: 'Student Organization',
-            position: 'left',
-            data: [
-                {
-                    date: 'Sep 2019 - Jun 2020',
-                    title: 'Minister of Competition Department',
-                    location: 'UM-SJTU Joint Institute Student Science, Technology and Innovation Association',
-                },
-            ],
-        },
+        }, 
+        // {
+        //     title: 'Coursework',
+        //     position: 'right',
+        //     data: [
+        //         {
+        //             title: 'EECS545 Machine Learning',
+        //             date: 'Fall',
+        //             location: 'A',
+        //         }, {
+        //             title: 'EECS498.008 Deep Learning for Computer Vision',
+        //             date: 'Winter',
+        //             location: 'A',
+        //         }, {
+        //             title: 'EECS482 Introduction to Operating Systems',
+        //             date: 'Winter',
+        //             location: 'A',
+        //         }, {
+        //             title: 'EECS376 Foundations of Computer Science',
+        //             date: 'Fall',
+        //             location: 'A',
+        //         }, {
+        //             title: 'EECS281 Data Structures and Algorithms',
+        //             date: 'Fall',
+        //             location: 'A',
+        //         },
+        //     ],
+        // }, {
+        //     title: 'Student Organization',
+        //     position: 'left',
+        //     data: [
+        //         {
+        //             date: 'Sep 2019 - Jun 2020',
+        //             title: 'Minister of Competition Department',
+        //             location: 'UM-SJTU Joint Institute Student Science, Technology and Innovation Association',
+        //         },
+        //     ],
+        // },
     ],
     awards: [
         {
-            date: 'Aug 2022',
-            title: 'Roger King Scholarship',
+            date: 'Jan 2023 - Present',
+            title: 'Research Intern In NVIDIA',
+            icon: 'briefcase',
         }, {
-            date: 'Nov 2020',
-            title: 'SJTU Undergraduate Excellent Scholarship',
+            date: 'Aug 2022 - Jan 2023',
+            title: 'Student Research Assistant In MineDojo Team',
+            icon: 'briefcase',
         },
     ],
     tagColors: [
