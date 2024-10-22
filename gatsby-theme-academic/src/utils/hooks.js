@@ -48,6 +48,7 @@ export const useSiteMetadata = () => {
           contactFormUrl
           pages {
             home
+            tags
             project
           }
           interests {
@@ -63,6 +64,12 @@ export const useSiteMetadata = () => {
           awards {
             date
             title
+          }
+          tags {
+            id
+            name
+            description
+            color
           }
         }
       }

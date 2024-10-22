@@ -30,7 +30,7 @@ module.exports = {
         posts: 'posts',
         // contact: 'contact',
         // resume: 'resume',
-        // tags: 'tags',
+        tags: 'tags',
         project: 'project',
         // wakatime: 'wakatime',
     },
@@ -176,60 +176,11 @@ module.exports = {
     ],
     tags: [
         {
-            id: 'javascript',
-            name: 'javascript',
+            id: 'pokemon',
+            name: 'mimikyu',
             description:
-                'JavaScript is an object-oriented programming language used alongside HTML and CSS to give functionality to web pages.',
-            color: '#f0da50',
-        },
-        {
-            id: 'nodejs',
-            name: 'Node.js',
-            description:
-                'Node.js is a tool for executing JavaScript in a variety of environments.',
-            color: '#90c53f',
-        },
-        {
-            id: 'rxjs',
-            name: 'RxJS',
-            description:
-                'RxJS is a library for reactive programming using Observables, for asynchronous operations.',
-            color: '#eb428e',
-        },
-        {
-            id: 'typescript',
-            name: 'typescript',
-            description:
-                'TypeScript is a typed superset of JavaScript that compiles to plain JavaScript.',
-            color: '#257acc',
-        },
-        {
-            id: 'reactjs',
-            name: 'reactjs',
-            description:
-                'React is an open source JavaScript library used for designing user interfaces.',
-            color: '#61dbfa',
-        },
-        {
-            id: 'gatsby',
-            name: 'Gatsby.js',
-            description:
-                'A framework built over ReactJS to generate static page web application.  ',
+                'I love Pokémon',
             color: '#6f309f',
-        },
-        {
-            id: 'html',
-            name: 'HTML',
-            description:
-                'A markup language that powers the web. All websites use HTML for structuring the content.',
-            color: '#dd3431',
-        },
-        {
-            id: 'css',
-            name: 'css',
-            description:
-                'CSS is used to style the HTML element and to give a very fancy look for the web application.',
-            color: '#43ace0',
         },
         {
             id: 'python',
