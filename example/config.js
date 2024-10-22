@@ -6,7 +6,7 @@ module.exports = {
     author: 'Yuqi Xie',
     authorAlternative: '谢雨齐',
     introduction: [
-        'Hi! I\'m **Yuqi Xie**, but feel free to call me **Leo**. I\'m currently pursuing a Master\'s in Computer Science at [UT Austin](https://www.cs.utexas.edu/), where I work in the [RPL Lab](https://rpl.cs.utexas.edu/) adviced by [Prof. Yuke Zhu](https://yukezhu.me/). I hold a Bachelor\'s degree in Electrical and Computer Engineering (ECE) from Shanghai Jiao Tong University ([SJTU](https://cse.engin.umich.edu/)) and a Bachelor\'s degree in Computer Science from the [University of Michigan](https://cse.engin.umich.edu/).',
+        'Hi! I\'m **Yuqi Xie**, but feel free to call me **Leo**. I\'m currently pursuing a Master\'s in Computer Science at [UT Austin](https://www.cs.utexas.edu/), where I work in the [RPL Lab](https://rpl.cs.utexas.edu/) advised by [Prof. Yuke Zhu](https://yukezhu.me/). I hold a Bachelor\'s degree in Electrical and Computer Engineering (ECE) from Shanghai Jiao Tong University ([SJTU](https://cse.engin.umich.edu/)) and a Bachelor\'s degree in Computer Science from the [University of Michigan](https://cse.engin.umich.edu/).',
         'I\'m a **Research Intern** with [NVIDIA\'s GEAR Lab](https://research.nvidia.com/labs/gear/), where I\'m fortunate to work with [Dr. Jim Fan](https://jimfan.me/). Our team is focused on developing **generalist models for humanoid robots**. If you\'re interested in our team, don\'t hesitate to reach out!',
         '**Fun Facts**: I\'m a big fan of **Pokémon** and love diving into **anime** during my downtime!'
 
