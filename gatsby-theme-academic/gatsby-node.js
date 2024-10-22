@@ -179,7 +179,7 @@ exports.createPages = async ({
         };
       }
       if (!tags[tag].path) {
-        // tags[tag].path = createTagPage(options, createPage, tag, node);
+        tags[tag].path = createTagPage(options, createPage, tag, node);
       }
       return;
     }
@@ -339,7 +339,7 @@ exports.createPages = async ({
   // eslint-disable-next-line no-restricted-syntax
   for (const tag in tags) {
     if (!tags[tag].path) {
-      // tags[tag].path = createTagPage(options, createPage, tag, null);
+      tags[tag].path = createTagPage(options, createPage, tag, null);
     }
   }
 
