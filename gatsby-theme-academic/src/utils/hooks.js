@@ -33,7 +33,6 @@ export const useSiteMetadata = () => {
           authorAlternative
           introduction
           avatar
-          professions
           tocMaxDepth
           excerptMaxLength
           birthday
