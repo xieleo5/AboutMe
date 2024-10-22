@@ -6,20 +6,20 @@ module.exports = {
     author: 'Yuqi Xie',
     authorAlternative: '谢雨齐',
     introduction: [
-        'Hi, I am Yuqi Xie, you can also call me Leo. I am a Computer Science MS student at [UT Austin](https://www.cs.utexas.edu/) in [RPL lab](https://rpl.cs.utexas.edu/) advised by [Prof. Yuke Zhu](https://www.cs.utexas.edu/~yukez/). I obtained my Bachelor\'s degree in ECE from Shanghai Jiaotong University ([SJTU](https://cse.engin.umich.edu/)) and Bachelor\'s degree in CS from [Umich](https://cse.engin.umich.edu/).',
-        'I I\'m a Research Intern at [GEAR](https://research.nvidia.com/labs/gear/) advised by [Dr. Jim Fan](https://jimfan.me/). We are aiming to build generalist model for humanoid robots. If you are interested in joining us, please feel free to reach out to me.',
-        'Fun Facts: I\'m a great fan of Pokemon. I also watch a lot Anime. '
+        'Hi! I\'m **Yuqi Xie**, but feel free to call me **Leo**. I\'m currently pursuing a Master\'s in Computer Science at [UT Austin](https://www.cs.utexas.edu/), where I work in the [RPL Lab](https://rpl.cs.utexas.edu/) adviced by [Prof. Yuke Zhu](https://yukezhu.me/). I hold a Bachelor\'s degree in Electrical and Computer Engineering (ECE) from Shanghai Jiao Tong University ([SJTU](https://cse.engin.umich.edu/)) and a Bachelor\'s degree in Computer Science from the [University of Michigan](https://cse.engin.umich.edu/).',
+        'I\'m a **Research Intern** with [NVIDIA\'s GEAR Lab](https://research.nvidia.com/labs/gear/), where I\'m fortunate to work with [Dr. Jim Fan](https://jimfan.me/). Our team is focused on developing **generalist models for humanoid robots**. If you\'re interested in our team, don\'t hesitate to reach out!',
+        '**Fun Facts**: I\'m a big fan of **Pokémon** and love diving into **anime** during my downtime!'
 
     ],
     avatar: 'avatar.jpg',
     professions: [
-        'CSE Student',
+        // 'CSE Student',
     ],
     tocMaxDepth: 2,
     excerptMaxLength: 500,
     birthday: 'May. 5, 2001',
-    location: 'Shanghai, China',
-    email: 'xieleo@umich.edu',
+    location: 'Austin, TX',
+    email: 'xieleo@utexas.edu',
     language: '中文, English',
     postsForArchivePage: 3,
     defaultLanguage: 'en',
@@ -28,11 +28,11 @@ module.exports = {
     pages: {
         home: '/',
         posts: 'posts',
-        contact: 'contact',
-        resume: 'resume',
-        tags: 'tags',
+        // contact: 'contact',
+        // resume: 'resume',
+        // tags: 'tags',
         project: 'project',
-        wakatime: 'wakatime',
+        // wakatime: 'wakatime',
     },
     social: [
         {
@@ -49,7 +49,7 @@ module.exports = {
         },
         {
             url: 'https://x.com/yuqi_xie5',
-            icon: ['fab', 'twitter'],
+            icon: ['fab', 'x-twitter'],
         }
     ],
     // facebook: 'https://www.facebook.com/rolwin.monteiro',

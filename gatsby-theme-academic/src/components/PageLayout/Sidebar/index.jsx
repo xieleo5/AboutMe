@@ -24,7 +24,7 @@ const Name = () => {
     <Row>
       <Col xs={24}>
         <h2 className="centerAlign">
-          {firstName}
+        <span>{firstName}</span>
           &nbsp;
           <span>{lastName}</span>
         </h2>
@@ -49,7 +49,7 @@ const UserInfo = () => {
   return (
     <>
       <div className={`${style.name} centerAlign`}>
-        <Row>
+        {/* <Row>
           {siteMetadata.professions.map((profession) => (
             <Col
               key={profession}
@@ -62,7 +62,7 @@ const UserInfo = () => {
               <span className={`${style.badge} ${style.badgeGray}`}>{profession}</span>
             </Col>
           ))}
-        </Row>
+        </Row> */}
         <div className="centerAlign box" style={{ marginTop: '0.5rem' }}>
           <Row gutter={[10, 0]}>
             {siteMetadata.social.map((social) => (

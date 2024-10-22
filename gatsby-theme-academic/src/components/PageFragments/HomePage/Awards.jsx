@@ -46,7 +46,7 @@ const AwardItem = (data) => {
         paddingBottom: '0.8rem',
         paddingTop: '0.8px',
       }}
-      icon={<Icon size={data.iconSize || 'lg'} fixedWidth icon={data.icon || 'award'} />}
+      icon={<Icon size={data.iconSize || 'lg'} fixedWidth icon={data.icon || 'briefcase'} />}
       iconStyle={{ cursor: 'default' }}
       iconColor="#44566C"
       // bubbleStyle={{ background: 'none', border: '0' }}

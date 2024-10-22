@@ -49,18 +49,7 @@ export const useSiteMetadata = () => {
           contactFormUrl
           pages {
             home
-            posts
-            contact
-            resume
-            tags
             project
-          }
-          wakatime {
-            username
-            activity
-            language
-            editor
-            os
           }
           interests {
             icon
@@ -72,25 +61,9 @@ export const useSiteMetadata = () => {
             title
             location
           }
-          experience {
-            title
-            position
-            data {
-              date
-              title
-              location
-              description
-            }
-          }
           awards {
             date
             title
-          }
-          tags {
-            id
-            name
-            description
-            color
           }
         }
       }

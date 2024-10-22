@@ -47,10 +47,10 @@ const Experience = () => {
             ) : null}
         </Col>
         <Col xs={24} sm={24} md={12} lg={9}>
-          <h2 style={{ marginBottom: '0.8rem' }} className="interests">Interests</h2>
+          {/* <h2 style={{ marginBottom: '0.8rem' }} className="interests">Interests</h2>
           <List itemLayout="horizontal" split={false}>
             {siteMetadata.interests.map(generateInterest)}
-          </List>
+          </List> */}
         </Col>
       </Row>
 
